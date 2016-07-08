@@ -114,6 +114,17 @@ py_binary(
 )
 
 py_binary(
+    name = "study",
+    srcs = [
+        "study.py",
+    ],
+    deps = [
+        ":imagenet_data",
+        ":image_processing",
+    ],
+)
+
+py_binary(
     name = "flowers_train",
     srcs = [
         "flowers_train.py",
